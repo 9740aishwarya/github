@@ -52,28 +52,39 @@
         button:hover {
             background-color: #005fa3;
         }
-        .nav {
-            margin-bottom: 20px;
-            text-align: center;
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0077cc;
+            padding: 0;
+            margin-bottom: 30px;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
         }
-        .nav a {
-            margin: 0 10px;
-            color: #0077cc;
+        .navbar a {
+            display: block;
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 500;
+            padding: 18px 32px;
+            transition: background 0.2s, color 0.2s;
+            font-size: 18px;
         }
-        .nav a:hover {
-            text-decoration: underline;
+        .navbar a:hover, .navbar a.active {
+            background-color: #005fa3;
+            color: #ffd700;
+            border-radius: 8px 8px 0 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="nav">
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </div>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
         <h1>Contact Us</h1>
         <form>
             <label for="name">Name:</label>
