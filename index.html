@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aishwarya github</title>
     <style>
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0077cc;
+            padding: 0;
+            margin-bottom: 30px;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .navbar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 18px 32px;
+            transition: background 0.2s, color 0.2s;
+            font-size: 18px;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #005fa3;
+            color: #ffd700;
+            border-radius: 8px 8px 0 0;
+        }
         h1{
             color: red;
             background-color: orange;
@@ -19,16 +43,14 @@
     </style>
 </head>
 <body>
+    <nav class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
     <h1 align="center">welcome to sharnbasva university </h1>
-    <a href="index.html">Home </a>
-    <a href="about.html">About </a>
-    <a href="contact.html">Contact </a>
     <img src="image.png" alt="" width="30%">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id exercitationem facere neque. Dolorem sint incidunt distinctio voluptates consectetur repudiandae quaerat numquam eius esse corrupti! Cum odio laudantium laborum vel repellat.
-
     </p>
-    
-
-    
 </body>
 </html>

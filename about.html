@@ -2,14 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Page</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0077cc;
+            padding: 0;
+            margin-bottom: 30px;
+            border-radius: 8px 8px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        .navbar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 18px 32px;
+            transition: background 0.2s, color 0.2s;
+            font-size: 18px;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #005fa3;
+            color: #ffd700;
+            border-radius: 8px 8px 0 0;
+        }
+        h1 {
+            color: #0077cc;
+            text-align: center;
+            margin-top: 40px;
+        }
+        p {
+            font-size: 20px;
+            color: #333;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 700px;
+            margin: 30px auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>This is about file</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, delectus hic temporibus illum nulla perspiciatis maiores inventore doloremque debitis a quas accusamus explicabo, ullam vel omnis qui consequuntur possimus molestiae.
-        
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <h1>About Us</h1>
+    <p>
+        Welcome to our website! We are dedicated to providing the best service and information. 
+        Our team is passionate about technology and education. Feel free to explore and contact us for more details.
     </p>
-    
 </body>
 </html>
